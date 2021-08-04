@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	<div style="text-align:center;">
+	<canvas id='canvas' width = "600" height = "600">
+			
+		</canvas>
+	</div>
+		
+		<script>
+		//outer circle
+			let canvas = document.getElementById('canvas');
+			canvas.style.border = '2px solid black';
+			let ggk = canvas.getContext('2d');
+			ggk.beginPath();
+			ggk.lineWidth = 8;
+			ggk.strokeStyle = 'black';
+			ggk.arc(300,300,280,0,2*Math.PI,true);
+			ggk.stroke();
+			
+			/*
+			
+			PLZ EXPLAIN ABOUT RADIAL GRADIENT
+			
+			*/
+			
+			
+			
+		
+		//outer eye
+			ggk.beginPath();
+			ggk.linewidth = 2;
+			ggk.strokeStyle = 'black';
+			ggk.fillStyle = 'darkgrey';
+			ggk.arc(180,200,40,0,2*Math.PI,true);
+			ggk.stroke();
+			ggk.fill();
+			
+			ggk.beginPath();
+			ggk.linewidth = 2;
+			ggk.strokeStyle = 'black';
+			ggk.fillStyle = 'darkgrey';
+			ggk.arc(420,200,40,0,2*Math.PI,true);
+			ggk.stroke();
+			ggk.fill();
+			
+		//inner eye	
+			ggk.beginPath();
+			ggk.linewidth = 2;
+			ggk.strokeStyle = 'black';
+			ggk.fillStyle = 'black';
+			ggk.arc(180,200,20,0,2*Math.PI,true);
+			ggk.stroke();
+			ggk.fill();
+			
+			ggk.beginPath();
+			ggk.linewidth = 2;
+			ggk.strokeStyle = 'black';
+			ggk.fillStyle = 'black';
+			ggk.arc(420,200,20,0,2*Math.PI,true);
+			ggk.stroke();
+			ggk.fill();
+			
+			//nggk.beginPath();
+			ggk.moveTo(300,250);
+			ggk.lineTo(275,360);
+			ggk.CurveJoin="round";
+			ggk.quadraticCurveTo(300,400,355,360);
+			ggk.stroke();
+			
+			
+			//Mouth
+			ggk.beginPath();
+			ggk.strokeStyle = 'black';
+			ggk.moveTo(150,420);
+			ggk.quadraticCurveTo(300,420,450,420);
+			ggk.stroke();
+			
+			ggk.beginPath();
+			ggk.moveTo(150,420);
+			ggk.quadraticCurveTo(300,570,450,420);
+			ggk.fillStyle = 'red';
+			ggk.stroke();
+			ggk.fill();
+		</script>
+	</body>
+</html>
